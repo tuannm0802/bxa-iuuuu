@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebee;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        .envelope {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background: #f06292;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+        .hearts {
+            font-size: 30px;
+            color: white;
+        }
+        .message {
+            display: none;
+            font-size: 24px;
+            color: #d81b60;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="hearts">💌💖</div>
+    </div>
+    <div class="message" id="message">sodiiii bxa iuuu ck iuuu bxa nhắmmm</div>
+
+    <script>
+        function openEnvelope() {
+            document.querySelector(".envelope").style.display = "none";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
